@@ -7,14 +7,90 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
+  background-color: rgb(231, 224, 228);
   color: #212121;
   line-height: 1.5;
+  margin: 0;
 }
 
-#search-box {
-  font: inherit;
-  padding: 8px;
-  max-width: 320px;
-  margin-bottom: 16px;
+.js_is-hidden{
+  visibility: hidden;
+}
+
+.search-form{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 15px;
+  text-align: center;
+  background-color: rgb(148, 96, 181);
+  border-bottom: solid rgb(78, 171, 197) 2px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../img/paper-background.jpg)
+}
+
+.btn{
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  border-color: blueviolet;
+  color: blueviolet;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+}
+
+.btn:hover,
+.btn:focus{
+  color: rgb(78, 171, 197);
+  border-color: rgb(78, 171, 197);
+}
+
+.input-form{
+  width: 450px;
+  padding: 10px;
+  margin-right: 20px;
+  border-radius: 20px;
+  color: blueviolet;
+  border-color: blueviolet;
+}
+
+.input-form:hover,
+.input-form:focus{
+  color: rgb(78, 171, 197);
+  border-color: rgb(78, 171, 197);
+}
+
+.gallery{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.photo-card{
+  height: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  display: block;
+  text-align: center;
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+}
+
+.photo-card:hover,
+.photo-card:focus{
+  border: solid 2px;
+  border-color: rgb(194, 163, 223);
+}
+
+.info{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.info-value{
+  color: rgb(78, 171, 197);
 }
