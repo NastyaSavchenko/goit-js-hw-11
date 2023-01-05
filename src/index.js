@@ -58,12 +58,12 @@ async function onLodeMoreClick() {
     refs.gallery.insertAdjacentHTML('beforeend', gallery(data.hits));
     simpleLightBox.refresh();
     scroll();
-  } catch (error) {
-    refs.lodeMore.classList.add('js_is-hidden');
 
-    Notiflix.Notify.info(
-      "We're sorry, but you've reached the end of search results."
-    );
+    if (data.hits.length === 0) {
+    catchError();
+    }
+  } catch (error) {
+    catchError();
   }
 }
 
@@ -75,4 +75,12 @@ function scroll() {
     top: cardHeight * 2,
     behavior: 'smooth',
   });
+}
+
+function catchError() {
+  refs.lodeMore.classList.add('js_is-hidden');
+
+  Notiflix.Notify.info(
+    "We're sorry, but you've reached the end of search results."
+  );
 }
