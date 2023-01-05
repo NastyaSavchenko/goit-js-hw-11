@@ -1,4 +1,3 @@
-import './css/styles.css';
 import Notiflix from 'notiflix';
 import { Api } from './js/on-search';
 import gallery from './templates/gallery.hbs';
